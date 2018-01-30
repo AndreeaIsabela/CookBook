@@ -26,7 +26,11 @@
                         </div>
                     </td>
                     <td class="nav-item">
-                        <input type="text" name="googlesearch">
+                            <select name="text"> 
+                                <option value="value1">Scambled egg omlette</option> 
+                                <option value="value2" selected>Select a recipe...</option>
+                                
+                              </select>
                     </td>
                 </tr>
             </table>
@@ -40,18 +44,38 @@
             </h3>
 
             <form>
-                <br> Receipe title
-                <br>
-                <input type="text" name="title" value="Title">
-                <br>
-                <br> Description
-                <br>
-                <textarea name="message" rows="10" cols="30">About the recipe</textarea>
-                <br>
-                
-                Portions <input type="number" name="portions" min="1" max="10" step="1" value="1">
-                   Time(mins)<input type="number" name="portions" min="5" max="120" step="5" value="5">
-                   
+
+                <div>
+                    <label for="title">Recipe title</label>
+                    <input type="text" name="title" id="title" value="Title" >
+                </div>
+                <div>
+                    <label for="message-box"> Description</label>
+                    <textarea name="message" id="message-box" rows="10" cols="30">About the recipe</textarea>
+                </div>
+
+                <section class="container">
+
+                    <div class="item">Portions</div>
+                    <div class="item"> Time(mins)</div>
+                    <div class="item"> Dificulty</div>
+                    <div class="item">
+                            <select name="portions"> 
+                                    <option value="value1" selected>1</option> 
+                                    <option value="value2" >2</option>
+                                    
+                                  </select>
+                    </div>
+                    <div class="item">
+                        <input type="number" name="portions" min="5" max="120" step="5" value="5">
+                    </div>
+                    <div class="item">
+                        <input type="number" name="portions" min="1" max="10" step="1" value="1">
+                    </div>
+
+
+                </section>
+
             </form>
 
 
