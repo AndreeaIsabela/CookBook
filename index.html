@@ -11,50 +11,72 @@
 
 <body>
     <header>
-        <i class="fa fa-cutlery"></i>
-        <strong> iQuest Cook Book</strong>
+        <h1 id="first-red">
+            <i class="fa fa-cutlery"></i>
+            <strong> iQuest Cook Book</strong>
+        </h1>
+
+        <nav>
+            <table class="full-width">
+                <tr class="full-width">
+                    <td class="nav-item">
+                        <div>
+                            <i class="fa fa-plus"></i>
+                            <strong> New recipe</strong>
+                        </div>
+                    </td>
+                    <td class="nav-item">
+                        <input type="text" name="googlesearch">
+                    </td>
+                </tr>
+            </table>
+        </nav>
+
     </header>
-    <nav>
-        <ul>
-            <li>
-                <a>
-                    <i class="fa fa-plus"></i>
-                    <strong> New recipe</strong>
-                </a>
-            </li>
-            <li>
-
-            </li>
-        </ul>
-    </nav>
-
     <main>
         <section>
-            <header>
-                    <i class="fa fa-info"></i>  About
-            </header>
+            <h3 class="red-ish">
+                <i class="fa fa-info"></i> About
+            </h3>
+
+            <form>
+                <br> Receipe title
+                <br>
+                <input type="text" name="title" value="Title">
+                <br>
+                <br> Description
+                <br>
+                <textarea name="message" rows="10" cols="30">About the recipe</textarea>
+                <br>
+                
+                Portions <input type="number" name="portions" min="1" max="10" step="1" value="1">
+                   Time(mins)<input type="number" name="portions" min="5" max="120" step="5" value="5">
+                   
+            </form>
+
 
         </section>
 
 
+        <!--
         <section>
-            <header>
-                    <i class="fa fa-list"></i> Ingredients
-            </header>
-            <i class="fa fa-plus-square"></i> 
-
+            <p class="red-ish">
+                <i class="fa fa-list"></i> Ingredients
+            </p>
+            <i class="fa fa-plus-square"></i>
+            
         </section>
-
+        
         <section>
-            <header>
-                    <i class="fa fa-list-ol"></i> Steps
-            </header>
-
-            <i class="fa fa-plus-square"></i> 
+            <p class="red-ish">
+                <i class="fa fa-list-ol"></i> Steps
+            </p>
+            
+            <i class="fa fa-plus-square"></i>
         </section>
+        -->
 
     </main>
-
 
 </body>
 
