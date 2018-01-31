@@ -26,11 +26,11 @@
                         </div>
                     </td>
                     <td class="nav-item">
-                            <select name="text"> 
-                                <option value="value1">Scambled egg omlette</option> 
-                                <option value="value2" selected>Select a recipe...</option>
-                                
-                              </select>
+                        <select name="text">
+                            <option value="value1">Scambled egg omlette</option>
+                            <option value="value2" selected>Select a recipe...</option>
+
+                        </select>
                     </td>
                 </tr>
             </table>
@@ -47,33 +47,34 @@
 
                 <div>
                     <label for="title">Recipe title</label>
-                    <input type="text" name="title" id="title" value="Title" >
+                    <input type="text" name="title" id="title" placeholder="Title">
                 </div>
                 <div>
                     <label for="message-box"> Description</label>
-                    <textarea name="message" id="message-box" rows="10" cols="30">About the recipe</textarea>
+                    <textarea name="message" id="message-box" rows="10" cols="30" placeholder="About the recipe"></textarea>
                 </div>
 
                 <section class="container">
 
-                    <div class="item">Portions</div>
-                    <div class="item"> Time(mins)</div>
-                    <div class="item"> Dificulty</div>
                     <div class="item">
-                            <select name="portions"> 
-                                    <option value="value1" selected>1</option> 
-                                    <option value="value2" >2</option>
-                                    
-                                  </select>
+                        <label for="portions"> Portions</label>
                     </div>
                     <div class="item">
-                        <input type="number" name="portions" min="5" max="120" step="5" value="5">
+                        <label for="time"> Time(mins)</label>
                     </div>
                     <div class="item">
-                        <input type="number" name="portions" min="1" max="10" step="1" value="1">
+                        <label for="dificulty"> Dificulty</label>
                     </div>
 
-
+                    <div class="item">
+                        <input type="number" name="portions" id="portions" min="1" max="1" step="10" value="5">
+                    </div>
+                    <div class="item">
+                        <input type="number" name="time" id="time" min="5" max="120" step="5" value="5">
+                    </div>
+                    <div class="item">
+                        <input type="number" name="dificulty" id="dificulty" min="1" max="5" step="1" value="1">
+                    </div>
                 </section>
 
             </form>
@@ -82,23 +83,113 @@
         </section>
 
 
-        <!--
         <section>
-            <p class="red-ish">
+            <h3 class="red-ish">
                 <i class="fa fa-list"></i> Ingredients
-            </p>
-            <i class="fa fa-plus-square"></i>
-            
+            </h3>
+
+            <div class="ingredients">
+
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 300 g brown rice</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 2 pc red onions</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 1 pc fresh red chilli</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 25 g unsalted butter</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 6 pc large free-range eggs</div>
+
+
+            </div>
+
+            <section class="container2">
+
+
+                <div class="item2">
+                    <input type="text" name="qty" placeholder="Qty.">
+                </div>
+                <div class="item2">
+
+                    <select name="text">
+                        <option value="value1" selected>Unit</option>
+                        <option value="value2">g</option>
+                        <option value="value3">Kg</option>
+                        <option value="value4">pc</option>
+                        <option value="value5">ml</option>
+                        <option value="value6">l</option>
+                        <option value="value7">tea spoon(s)</option>
+
+                    </select>
+                </div>
+                <div class="item2">
+                    <input type="text" name="ing" placeholder="Ingredient">
+                </div>
+
+                <div class="item2">
+                    <button type="submit">
+                        <i class="fa fa-plus-square"></i>
+                    </button>
+                </div>
+            </section>
+
+
+
         </section>
-        
+
         <section>
-            <p class="red-ish">
+            <h3 class="red-ish">
                 <i class="fa fa-list-ol"></i> Steps
-            </p>
+            </h3>
+
+            <div>
+
+                <ol>
+                    <li>
+                        Cook the rice in a pan of boiling salted water according to the packet instructions, then drain and refresh under cold water,
+                        leaving it in the colander.
+                    </li>
+                    <li>
+                        At the same time, poach the fish in a large pan of simmering salted water on a medium heat for 10 minutes,then carefully
+                        remove with a slotted spoon. Turn the heat up under the poaching water and bring back to a good simmer.
+
+                    </li>
+                    <li>
+                        Meahwhile, peel the onions and finely slice with the red chilli (deseed if you like) and coriander stalks. Peel and finely
+                        chop the garlic and ginger. Place it all in a large frying pan on a medium heat with 1 tablespoon
+                        of oil and the butter, and cook for 10 minutes, or until soft but not coloured, stirring occasionally.
+                    </li>
+                </ol>
+            </div>
+            <form>
+                <div>
+                    <label for="step-box"> Step</label><br>
+                    <textarea name="message" id="step-box" rows="10" cols="30" placeholder="Step description"></textarea>
+                </div>
+
+
+                <button type="submit" class="add-step">
+                    <i class="fa fa-plus-square"></i> Add step
+                </button>
+            </form>
+
             
-            <i class="fa fa-plus-square"></i>
+
         </section>
-        -->
+       <footer>
+
+        <div class="button-group">
+                <button class="button" ><i class="fa fa-trash-o"></i> Cancel </button>
+                <button class="save-button button"><i class="fa fa-floppy-o"></i> Save recipe</button>
+        </div>
+
+       </footer>
 
     </main>
 
