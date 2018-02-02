@@ -165,6 +165,7 @@ form div{
 	border-width: 0 2px 2px 0;
 	display: inline-block;
 	padding: 2px;
+
   }
   
   .ingredients{
@@ -189,6 +190,7 @@ button{
 	background-color: white;
 	margin-top: 5px;
 	padding: 10px;
+	cursor: pointer;
 
 }
 .add-step{
@@ -214,6 +216,7 @@ display: block;
 cursor: pointer;
 float: left;
 margin-bottom: 30px;
+cursor: pointer;
 }
 
 .save-button{
@@ -280,13 +283,14 @@ footer{
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-	.of{
-		display:inline;
-	}
+	
 	.add-step{
 		width: 95%;
 		margin-left: 10px;
 		margin-right: 10px;
+	}
+	.of{
+		display:inline;
 	}
 	.container3{
 		width: 90%;
@@ -308,4 +312,113 @@ footer{
 		margin-top: 2px;
 	}
 	
+	.grid-container{
+		display: grid;
+		grid-column-gap: 30px;
+		grid-template-columns: auto auto auto auto auto;
+	}
+	.grid-item{
+		text-align: center;
+	}
+
+	#order1{
+		order: 1;
+	}
+	#order2{
+		order: 2;
+	}#order3{
+		order: 3;
+	}#order4{
+		order: 4;
+	}#order5{
+		order: 5;
+	}#order6{
+		order: 6;
+	}
+	.container{
+		width: 90%;
+		
+		background-color:#eeeeee;
+	
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items:center;
+	}	
 }
+
+@media screen and (min-width: 700px) {
+	textarea,input,label{
+		
+		width: 90%;
+		margin-left: 20px;
+		margin-right: 20px;
+		
+	}
+	
+	.add-step{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.grid-container{
+		display: grid;
+		
+		grid-template-columns:50px 150px 30px 200px 80px;
+	
+		grid-gap: 20px;
+	}
+	.grid-item{
+		text-align: center;
+		
+	}
+	#unit{
+		margin-left:40px;
+		width: 80%;
+	}
+	#ingredient{
+		width:90%;
+	}
+	
+}
+
+@media screen and (min-width: 1000px) {
+	section{
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		
+		align-items: center;
+	}
+	.grid-container{
+		margin-left: 20px;
+		grid-gap: 30px;
+	}
+	#ingredient{
+		width:100%;
+	}
+	.container{
+		width: 90%;
+		margin-left: 0%;
+		margin-right:0% ;
+	}	
+	#order1,#order2,#order3{
+		margin-right: 1px;
+	}
+	#order3,#order4,#order5{
+		margin-left: 8%;
+	}
+	.container3{
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+	.add-step{
+		width: 93%;
+		margin-left: 20px;
+		margin-right: 10px;
+	}
+	.ingredients{
+		margin-left: 40px;
+	}
+  }
