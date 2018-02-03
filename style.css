@@ -294,13 +294,7 @@ footer{
 	}
 	.container3{
 		width: 90%;
-		height: 50px;
-	
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
 		
-		align-content: center;
 		margin-left: 5%;
 		margin-right: 5%;
 		
@@ -337,16 +331,12 @@ footer{
 	}
 	.container{
 		width: 90%;
-		
-		background-color:#eeeeee;
-	
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
 		align-items:center;
 	}	
 	
-
 }
 
 @media screen and (min-width: 700px) {
@@ -393,21 +383,23 @@ footer{
 		align-items: center;
 	}
 	.grid-container{
-		margin-left: 20px;
+		margin-left: 5%;
 		grid-gap: 30px;
 	}
 	#ingredient{
 		width:100%;
 	}
 	.container{
-		width: 90%;
+		width: 80%;
 		margin-left: 0%;
-		margin-right:0% ;
+		margin-right: 0%;
 		justify-content: space-between;
 		align-items:center;
 	}	
+	
 	#order1,#order2,#order3{
 		margin-right: 1px;
+		width: 80%;
 	}
 	#order3,#order4,#order5{
 		margin-left: 8%;
