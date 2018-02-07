@@ -134,11 +134,19 @@ select{
 }
 .item{
 	flex-basis: 30%;
-	margin-top: 2px;
-	
+	margin-top: 2px;	
 }
-.item input{
-	width: 30px;
+.item select{
+	width: 50px;
+}
+.grid-container{
+	
+	display: grid;
+	grid-column-gap: 30px;
+	grid-template-columns: auto auto auto auto;
+}
+.grid-item{
+	text-align: center;
 }
 form div{
 	margin-top: 15px;
@@ -221,14 +229,6 @@ footer{
 .of{
 	display: none;
 }
-.grid-container{
-	display: grid;
-	grid-column-gap: 30px;
-	grid-template-columns: auto auto auto auto;
-}
-.grid-item{
-	text-align: center;
-}
 #unit{
 	width: 80px;
 }
@@ -277,7 +277,6 @@ footer{
 	.grid-item{
 		text-align: center;
 	}
-
 	#order1{
 		order: 1;
 	}
@@ -292,8 +291,12 @@ footer{
 	}#order6{
 		order: 6;
 	}
+	#order2,#order4,#order6{
+		margin-left: 2px;
+	}
 	.container{
 		width: 90%;
+		
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
@@ -313,9 +316,8 @@ footer{
 	}
 	.grid-container{
 		display: grid;
-		
-		grid-template-columns:50px 150px 30px 200px 80px;
 	
+		grid-template-columns:50px 150px 30px 200px 80px;
 		grid-gap: 20px;
 	}
 	.grid-item{
@@ -345,12 +347,15 @@ footer{
 		width:100%;
 	}
 	.container{
-		width: 80%;
-		margin-left: 0%;
-		margin-right: 0%;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
 		justify-content: space-between;
-		align-items:center;
+		
 	}	
+	.item{
+		flex-basis: 40%;	
+	}
 	#order1,#order2,#order3{
 		margin-right: 1px;
 		width: 80%;
